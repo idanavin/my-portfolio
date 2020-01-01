@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idanavin/my-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idanavin/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/idanavin/my-portfolio#readme",
+  "dependencies": {
+    "animejs": "^3.1.0"
+  }
+}

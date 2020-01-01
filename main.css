@@ -8,13 +8,64 @@ body {
     color: white;
     font-size: 30px;
 }
-.left {
+.background {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    overflow: hidden;
+}
+.background__left {
     height: 100vh;
     width: 35vw;
     background-color: #14133B;
 }
+.background__right {
+    height: 100vh;
+    width: 65vw;
+    background-color: black;
+}
+.corner_shape {
+    height: 100%;
+    width: 60%;
+    background: url('/assets/corner.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: absolute;
+    bottom: -15%;
+    right: -10%;
+}
+
+.circle {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.circle_up { 
+    background-image: url('/assets/circle1.svg');
+    height: 250px;
+    width: 250px;
+    top: 5%;
+    right: 5%;
+}
+.circle_down { 
+    background-image: url('/assets/circle2.svg');
+    height: 130px;
+    width: 130px;
+    bottom: 15%;
+    right: 45%;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
 .links {
     height: 100%;
+    width: calc(35vw - 250px);;
 }
 .links > ul {
     list-style: none;
@@ -22,21 +73,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 10%;
 }
 .links > ul > .link {
-    padding: 10px;
-    margin: 10px;
+    margin: 10% 0;
+}
+.image_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .center_image {
     display: flex;
     justify-content: center;
     width: 500px;
     height: 500px;
-    position: fixed;
-    left: 30vw;
-    top: 50vh;
-    transform: translateY(-50%) translateX(-30%);
     border-radius: 50%;
     border: 1px solid white;
 }
@@ -48,8 +99,35 @@ body {
     background-size: contain;
     background-position: center;
 }
-.right {
-    height: 100vh;
-    width: 65vw;
-    background-color: black;
+
+.text_area {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.text_area > .tittle {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text_area > .tittle > h1 {
+    transform: translateX(-50px);
+}
+/* .text_area > .tittle > .svg1 {
+    width: 20em;
+    height: 2.5em;
+    background-image: url('/assets/Path\ 4.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.goto {
+    height: 50px;
+    width: 200px;
+    border: solid;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
