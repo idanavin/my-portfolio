@@ -64,6 +64,8 @@ body {
     display: flex;
 }
 .links {
+    display: flex;
+    align-items: center;
     height: 100%;
     width: calc(35vw - 250px);;
 }

@@ -6,3 +6,4 @@ requirejs.config({
 });
 
 requirejs(['../scripts/main']);
+requirejs(['../scripts/menu']);
