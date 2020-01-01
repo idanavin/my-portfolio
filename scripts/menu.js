@@ -7,9 +7,7 @@ define(function (require) {
             w = $(window).width(), //window width
             h = $(window).height(), //window height
             w1 = $(".links").width(),
-            h1 = $(".links").height();
-            console.log(w, h, w1, h1);
-            
+            h1 = $(".links").height();            
         
         $('.links').on('mousemove', function (e) {
             var offsetX = 0.5 - e.pageX / w1, //cursor position X
@@ -37,6 +35,8 @@ define(function (require) {
     
                 $this.css('transform', transformLayer);
             });
+        }).on('mouseleave', function() {
+            $menu.css('transform', 'translate3d(0)');
         });
     });
 
