@@ -2,7 +2,7 @@ define(function (require) {
   const anime = require('../node_modules/animejs/lib/anime.min.js');
   
 
-  $( ".svg1" ).load( "assets/idan.svg", function() {
+  $( ".svg1" ).load( "./assets/idan.svg", function() {
     
     const svgPath = document.querySelectorAll('.path');
   

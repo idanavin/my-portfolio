@@ -28,7 +28,7 @@ body {
 .corner_shape {
     height: 100%;
     width: 60%;
-    background: url('/assets/corner.svg');
+    background: url('./assets/corner.svg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -45,14 +45,14 @@ body {
 }
 
 .circle_up { 
-    background-image: url('/assets/circle1.svg');
+    background-image: url('./assets/circle1.svg');
     height: 250px;
     width: 250px;
     top: 5%;
     right: 5%;
 }
 .circle_down { 
-    background-image: url('/assets/circle2.svg');
+    background-image: url('./assets/circle2.svg');
     height: 130px;
     width: 130px;
     bottom: 15%;
@@ -96,7 +96,7 @@ body {
 .center_image> .img {
     width: 80%;
     height: 100%;
-    background-image: url('/assets/NoPath.png');
+    background-image: url('./assets/NoPath.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
