@@ -1,5 +1,6 @@
 define(function (require) {
   const anime = require('../node_modules/animejs/lib/anime.min.js');
+  
   const animate = function() {
     const svgPath = document.querySelectorAll('.path');
     
