@@ -114,9 +114,12 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.text_area > .tittle > h1 {
-    transform: translateX(-50px);
+.svg1 {
+    transition: all 2s ease-in;
 }
+/* .text_area > .tittle > h1 {
+    transform: translateX(-50px);
+} */
 /* .text_area > .tittle > .svg1 {
     width: 20em;
     height: 2.5em;

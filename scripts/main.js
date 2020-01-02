@@ -1,12 +1,8 @@
 define(function (require) {
   const anime = require('../node_modules/animejs/lib/anime.min.js');
-  
-
-  $( ".svg1" ).load( "./assets/idan.svg", function() {
-    
+  const animate = function() {
     const svgPath = document.querySelectorAll('.path');
-  
-    console.log(svgPath);
+    
     const svgText = anime({
       targets: svgPath,
       loop: false,
@@ -14,10 +10,24 @@ define(function (require) {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
       duration: 1000,
-      delay: (el, i) => { return i * 500 }
+      delay: (el, i) => { return i * 500 },
+      complete: function() {
+        svgPath.forEach(function (e) {
+          e.parentElement.style.transition = 'all 0.5s ease-in';
+          e.parentElement.style.fill = 'white';
+        });     
+      }
+    });
+  }
+
+  $( ".svg1" ).load( "./assets/idan.svg", function() {
+    $( ".svg2" ).load( "./assets/sub.svg", function() {
+      animate();
     });
   });
-  $(document).ready(function(){
-  });
+  // $( ".svg2" ).load( "./assets/sub.svg", function() {
+  //   animate();
+  // });
+
   
 });
