@@ -9,6 +9,8 @@ define(function (require) {
             w1 = $(".links").width(),
             h1 = $(".links").height();            
         
+        $menu.css('transform', 'translate3d(0, 0, 0) rotate(0)');
+
         $('.links').on('mousemove', function (e) {
             var offsetX = 0.5 - e.pageX / w1, //cursor position X
                 offsetY = 0.5 - e.pageY / h1, //cursor position Y
@@ -36,7 +38,7 @@ define(function (require) {
                 $this.css('transform', transformLayer);
             });
         }).on('mouseleave', function() {
-            $menu.css('transform', 'translate3d(0)');
+            $menu.css('transform', 'translate3d(0, 0, 0) rotate(0)');
         });
     });
 
