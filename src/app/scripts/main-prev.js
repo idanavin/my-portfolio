@@ -1,5 +1,5 @@
 define(function (require) {
-  const anime = require('../node_modules/animejs/lib/anime.min.js');
+  const anime = require('animejs/lib/anime.min');
   
   const animate = function() {
     const svgPath = document.querySelectorAll('.path');
