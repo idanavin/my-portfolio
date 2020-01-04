@@ -2,11 +2,13 @@ import _ from 'lodash';
 import tittleSvg from '../../assets/idan.svg';
 import subTittleSvg from '../../assets/sub.svg';
 
-const $container = $(".main_area");
 const anime = require('animejs/lib/anime.min');
 const homePage = require('../pages/home.html');
 
 export function homeInit() {
+
+    const $container = $(".main_area");
+    
     $container.html(homePage);
     const animate = function () {
         const svgPath = document.querySelectorAll('.path');

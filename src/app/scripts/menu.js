@@ -52,6 +52,14 @@ $('.links').on('mousemove', function (e) {
 });
 $item.click(function (e) {
     const clickedOn = e.currentTarget.id;
-    aboutInit();
-    // $container.html(Pages[clickedOn]);
+    console.log(clickedOn);
+    
+    switch (clickedOn) {
+        case 'home':
+            homeInit();
+            break;
+        case 'about':
+            aboutInit();
+            // break;
+    }
 });
