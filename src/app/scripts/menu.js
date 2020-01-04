@@ -1,20 +1,24 @@
-// import menuPage from '../pages/menu.html'
+import { homeInit } from './main';
+import { aboutInit } from './about';
+import aboutPage from '../pages/home.html'
+import work from '../pages/home.html'
+import contact from '../pages/home.html'
 
 const menuPage = require('../pages/menu.html');
+const $container = $(".main_area");
 
+//insert links html page
 $(".links").html(menuPage);
 var $menu = $('.Menu-list'),
     $item = $('.Menu-list-item'),
-    w = $(window).width(), //window width
-    h = $(window).height(), //window height
     w1 = $(".links").width(),
     h1 = $(".links").height();
 
-const resetTransform = function() {
+const resetTransform = function () {
     $menu.css('transform', 'translate3d(0, 0, 0) rotate(0deg)');
     $item.css('transform', 'translate3d(0, 0, 0) rotate(0deg)');
 }
-// console.log($('.links').html('<div>Hi<div>'));
+
 resetTransform();
 $('.links').on('mousemove', function (e) {
     var offsetX = 0.5 - e.pageX / w1, //cursor position X
@@ -42,6 +46,12 @@ $('.links').on('mousemove', function (e) {
 
         $this.css('transform', transformLayer);
     });
-}).on('mouseleave', function () {
+})
+.on('mouseleave', function () {
     resetTransform();
+});
+$item.click(function (e) {
+    const clickedOn = e.currentTarget.id;
+    aboutInit();
+    // $container.html(Pages[clickedOn]);
 });
