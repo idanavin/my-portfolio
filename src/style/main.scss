@@ -1,0 +1,121 @@
+.background {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    overflow: hidden;
+    &__left {
+        height: 100vh;
+        width: 35vw;
+        background-color: #14133B;
+    }
+
+    &__right {
+        height: 100vh;
+        width: 65vw;
+        background-color: black;
+        
+        .shape {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        .corner {
+            background: url('../assets/corner.svg');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            height: 100%;
+            width: 60%;
+            bottom: -15%;
+            right: -10%;
+        }
+
+        .circle_up {
+            background-image: url('../assets/circle1.svg');
+            height: 250px;
+            width: 250px;
+            top: 5%;
+            right: 5%;
+        }
+
+        .circle_down {
+            background-image: url('../assets/circle2.svg');
+            height: 130px;
+            width: 130px;
+            bottom: 15%;
+            right: 45%;
+        }
+    }
+}
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    .links {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: calc(35vw - 250px);
+        min-width: 315px;
+        z-index: 1;
+    }
+
+    .center_container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 35vw;
+        transform: translate(-50%, -50%);
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 1px solid white;
+            
+            &__bgimg {
+                width: 80%;
+                height: 100%;
+                background-image: url('../assets/NoPath.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+
+    .main_area {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 15%;
+        
+        &__text {
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        &__goto {
+            height: 50px;
+            width: 200px;
+            margin-right: 20%;
+            margin-top: 50px;
+            border: solid;
+        }
+    }
+}
+
+
+

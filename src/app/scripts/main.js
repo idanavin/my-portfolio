@@ -3,7 +3,10 @@ import tittleSvg from '../../assets/idan.svg'
 import subTittleSvg from '../../assets/sub.svg'
 
 const anime = require('animejs/lib/anime.min');
+const homePage = require('../pages/home.html');
 
+
+$(".main_area").html(homePage);
 const animate = function () {
     const svgPath = document.querySelectorAll('.path');
 
