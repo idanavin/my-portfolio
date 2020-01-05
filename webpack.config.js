@@ -8,6 +8,7 @@ module.exports = {
     main: './src/app/scripts/main.js',
     menu: './src/app/scripts/menu.js',
     about: './src/app/scripts/about.js',
+    work: './src/app/scripts/work.js',
   },
   plugins: [
     new HtmlWebpackPlugin({

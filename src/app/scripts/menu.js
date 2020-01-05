@@ -1,5 +1,6 @@
 import { homeInit } from './main';
 import { aboutInit } from './about';
+import { workInit } from './work';
 import aboutPage from '../pages/home.html'
 import work from '../pages/home.html'
 import contact from '../pages/home.html'
@@ -47,19 +48,20 @@ $('.links').on('mousemove', function (e) {
         $this.css('transform', transformLayer);
     });
 })
-.on('mouseleave', function () {
-    resetTransform();
-});
+    .on('mouseleave', function () {
+        resetTransform();
+    });
 $item.click(function (e) {
     const clickedOn = e.currentTarget.id;
-    console.log(clickedOn);
-    
+
     switch (clickedOn) {
         case 'home':
             homeInit();
             break;
         case 'about':
             aboutInit();
-            // break;
+            break;
+        case 'work':
+            workInit();
     }
 });
