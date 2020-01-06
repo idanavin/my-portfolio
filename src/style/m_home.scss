@@ -1,0 +1,23 @@
+@import './mixin';
+
+@include for-phone-only {
+    .home {
+        height: 100vh;
+        padding: 0;
+
+        &__text {
+            width: 100%;
+
+            svg {
+                margin: auto;
+                display: flex;
+                width: 90%;
+            }
+        }
+
+        &__goto {
+            margin: 0;
+            align-self: center;
+        }
+    }
+}
