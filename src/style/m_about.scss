@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./mixin";
+
+@include for-phone-only {
+    .about {
+        max-width: 100%;
+        margin: 0;
+        justify-content: space-around;
+
+        &__h3 {
+            margin: 130px 0 0 0;
+        }
+
+        &__text {
+            max-height: 300px;
+            overflow-y: scroll;
+            margin: 0;
+            line-height: normal;
+        }
+    }
+}

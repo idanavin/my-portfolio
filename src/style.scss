@@ -1,3 +1,5 @@
+@import "./style/variables";
+@import "./style/mixin";
 * {
     margin: 0;
     padding: 0;
@@ -9,3 +11,10 @@ body {
     font-size: 30px;
     overflow: hidden;
 }
+
+
+// @include for-phone-only {
+//     body {
+//         overflow-y: scroll;
+//     }
+// }

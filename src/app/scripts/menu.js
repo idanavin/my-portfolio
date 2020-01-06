@@ -1,9 +1,6 @@
-import { homeInit } from './main';
+import { homeInit, closeMenu } from './main';
 import { aboutInit } from './about';
 import { workInit } from './work';
-import aboutPage from '../pages/home.html'
-import work from '../pages/home.html'
-import contact from '../pages/home.html'
 
 const menuPage = require('../pages/menu.html');
 const $container = $(".main_area");
@@ -64,4 +61,5 @@ $item.click(function (e) {
         case 'work':
             workInit();
     }
+    closeMenu();
 });

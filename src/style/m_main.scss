@@ -34,13 +34,14 @@
     }
 
     .page-container {
+        transition: all 2s ease-in;
 
         .m_links {
             display: block;
             position: absolute;
-            height: 10vh;
             top: 5%;
             left: 5%;
+            z-index: 99;
 
             .menu {
                 height: 65px;
@@ -59,7 +60,8 @@
             top: 0;
             left: 0;
             width: 100vw;
-            z-index: 99;
+            height: 0;
+            opacity: 0;
         }
 
         .center_container {

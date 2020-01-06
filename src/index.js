@@ -10,6 +10,8 @@ import './style/work.scss';
 
 import './style/m_main.scss'
 import './style/m_home.scss'
+import './style/m_about.scss'
+import './style/m_work.scss'
 
 const mainPage = require('./app/pages/main.html');
 
