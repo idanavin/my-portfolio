@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 /* // === Variables =====
 $perspective:     60rem;
 $font-size:       4.25rem;
@@ -63,7 +65,7 @@ $split-color:     #FF2C75;
     height: 4px;
     border-radius: 4px;
     margin-top: 5px;
-    background: #A7A7B5;
+    background: $color-contrast;
     transform: scale(0);
     transition: transform .8s cubic-bezier(.16, 1.08, .38, .98);
     z-index: 1;
@@ -75,7 +77,7 @@ $split-color:     #FF2C75;
     display: block;
     position: absolute;
     overflow: hidden;
-    color: #A7A7B5;
+    color: $color-contrast;
     top: 0;
     height: 60%;
     transition: all .8s cubic-bezier(.16, 1.08, .38, .98);
@@ -99,7 +101,7 @@ $split-color:     #FF2C75;
 /* // === Where the fun stuff happens ===== */
 .Menu-list-item:hover>.Mask,
 .Menu-list-item:active>.Mask {
-    color: #FFF;
+    color: $color-extra-contrast;
     transform: skewX(12deg) translateX(5px);
 }
 

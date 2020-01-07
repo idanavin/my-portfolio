@@ -1,3 +1,5 @@
+@import './variables';
+
 .background {
     width: 100vw;
     position: absolute;
@@ -8,13 +10,13 @@
     &__left {
         height: 100vh;
         width: 35vw;
-        background-color: #14133B;
+        background-color: $color-light;
     }
 
     &__right {
         height: 100vh;
         width: 65vw;
-        background-color: #3B1326;
+        background-color: $color-white;
 
     }
 
@@ -23,6 +25,7 @@
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: cover;
+        opacity: 0.6;
     }
 
     .corner {
@@ -34,6 +37,7 @@
         width: 60%;
         bottom: -15%;
         right: -10%;
+        opacity: 1;
     }
 
     .circle_up {
@@ -83,7 +87,7 @@
             width: 500px;
             height: 500px;
             border-radius: 50%;
-            border: 1px solid white;
+            border: 1px solid $color-contrast;
 
             &__bgimg {
                 width: 80%;

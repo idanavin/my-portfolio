@@ -61,7 +61,7 @@ export function homeInit() {
             complete: function () {
                 svgPath.forEach(function (e) {
                     e.parentElement.style.transition = 'all 0.5s ease-in';
-                    e.parentElement.style.fill = 'white';
+                    e.parentElement.style.fill = '#0A3055';
                 });
             }
         });

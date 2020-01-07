@@ -61,5 +61,11 @@ $item.click(function (e) {
         case 'work':
             workInit();
     }
-    closeMenu();
+    
+    //mobile menu
+    if (window.innerWidth < 780) {
+        closeMenu();
+    }
+
+    
 });
