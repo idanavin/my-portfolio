@@ -1,3 +1,5 @@
+@import './variables';
+
 .home {
     height: 70%;
     width: 100%;
@@ -15,10 +17,22 @@
     }
 
     &__goto {
+        color: $color-contrast;
         height: 50px;
         width: 200px;
         margin-right: 20%;
         margin-top: 50px;
-        border: solid;
+        box-shadow:  7px 7px 9px 0px rgba(0,0,0,0.35);
+        border-style: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+
+        &:active, &:focus {
+            outline: none;
+            border-style: none;
+        }
+        &:active {
+            transform: translate(3px, 3px);
+        }
     }
 }

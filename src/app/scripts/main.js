@@ -24,11 +24,11 @@ function menuAnime(target, isOpa, dis, css) {
 
 export function closeMenu() {
     menuAnime($('.links'), 0, 'none', {'display': 'none', 'height': '0', 'opacity': '0'});
-    menuAnime($(".main_area"), 'flex', 1, {'display': 'flex'});
+    menuAnime($(".main_area"), 1, 'flex', {'display': 'flex'});
     opened = false;
 }
 
-
+//animation isnt working properly
 $('.m_links').on('click', () => {
     opened = !opened;
     if (opened) {
@@ -36,7 +36,7 @@ $('.m_links').on('click', () => {
         menuAnime($('.links'), 1, 'flex', {'display': 'flex', 'height': '100vh', 'opacity': '1'});
     } else {
         menuAnime($('.links'), 0, 'none', {'display': 'none', 'height': '0', 'opacity': '0'});
-        menuAnime($(".main_area"), 'flex', 1, {'display': 'flex'});
+        menuAnime($(".main_area"), 1, 'flex', {'display': 'flex'});
     }
 
 });

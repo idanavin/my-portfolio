@@ -8,8 +8,9 @@ export function workInit() {
     const h1 = document.querySelector('.work__h1');
     anime({
         targets: [h3, h1],
+        translateX: ['-100%', '0'],
         loop: false,
-        easing: 'easeInOutSine',
+        // easing: 'easeInOutSine',
         keyframes: [
             { opacity: 0 },
             { opacity: 0.3 },

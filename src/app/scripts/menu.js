@@ -16,8 +16,10 @@ const resetTransform = function () {
     $menu.css('transform', 'translate3d(0, 0, 0) rotate(0deg)');
     $item.css('transform', 'translate3d(0, 0, 0) rotate(0deg)');
 }
-
+// reset animation on page load
 resetTransform();
+
+//Mouse events
 $('.links').on('mousemove', function (e) {
     var offsetX = 0.5 - e.pageX / w1, //cursor position X
         offsetY = 0.5 - e.pageY / h1, //cursor position Y
@@ -48,6 +50,8 @@ $('.links').on('mousemove', function (e) {
     .on('mouseleave', function () {
         resetTransform();
     });
+
+//Click links - call page replace function
 $item.click(function (e) {
     const clickedOn = e.currentTarget.id;
 
@@ -62,7 +66,7 @@ $item.click(function (e) {
             workInit();
     }
     
-    //mobile menu
+    //mobile menu - bugs if client resize
     if (window.innerWidth < 780) {
         closeMenu();
     }
