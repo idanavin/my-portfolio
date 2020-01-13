@@ -33,6 +33,14 @@
             height: 250px;
             background-color: white;
             margin: auto;
+
+            .item-background {
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
     }
 }

@@ -1,12 +1,18 @@
 import _ from 'lodash';
 import tittleSvg from '../../assets/idan.svg';
 import subTittleSvg from '../../assets/sub.svg';
+import { workInit } from './work';
+
 
 const anime = require('animejs/lib/anime.min');
 const homePage = require('../pages/home.html');
 
 // For mobile menu
 let opened = false;
+
+$('.home__goto').click(() => {
+    workInit();
+}) 
 
 function menuAnime(target, isOpa, dis, css) {
     anime({
