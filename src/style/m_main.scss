@@ -44,11 +44,11 @@
             z-index: 99;
 
             .menu {
-                height: 65px;
-                width: 65px;
+                height: 35px;
+                width: 35px;
                 background-image: url('../assets/menu.svg');
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
 
             }
 

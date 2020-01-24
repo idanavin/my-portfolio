@@ -16,6 +16,11 @@
             overflow-y: scroll;
             margin: 0;
             line-height: normal;
+            display: block;
+
+            p {
+                margin: 5vh 0;
+            }
         }
     }
 }
