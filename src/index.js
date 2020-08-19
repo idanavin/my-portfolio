@@ -7,6 +7,7 @@ import './style/menu.scss';
 import './style/about.scss';
 import './style/home.scss';
 import './style/work.scss';
+import './style/project.scss';
 
 import './style/m_main.scss'
 import './style/m_home.scss'
