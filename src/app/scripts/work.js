@@ -6,16 +6,18 @@ const projectPage = require('../pages/project.html');
 
 const myWork = [
     {
-        title: 'try',
+        title: 'Angular - Embeded Videos',
         url: 'https://www.stoleron.com/',
         simg: p1s,
-        limg: ''
+        limg: '',
+        desc: 'Angular project allows owner to share imbeded videos from Youtube & Vimeo. Project includes: Auth for administration, firebase implementation for storing users and videos'
     },
     {
-        title: '2nd',
+        title: 'Blog Website',
         url: 'https://github.com/idanavin',
         simg: p1s,
-        limg: ''
+        limg: '',
+        desc: 'Angular project gives owner ability to create, edit and delete blog posts. Project includes SASS for style, firebase connection and google\'s api loging auth for admin.'
     },
     {
         url: '',
@@ -40,10 +42,10 @@ function showProject() {
         $(".project").remove();
     });
 }
-function editProjectPage(index) {
-    console.log(index);
-    
+function editProjectPage(index) {    
     $('.project__title').text(myWork[index].title);
+    $('.project__about').text(myWork[index].desc);
+
 }
 
 export function workInit() {
@@ -68,13 +70,17 @@ export function workInit() {
 
     for (let i = 0; i < myWork.length; i++) {
         gallery.append(mark);
-        // $('.work__gallery__item')[i].data('item', i)
-        let item = $('.item-background')[i];
+        
+        let background = $('.item-background')[i];
         let button = $('.item-demo')[i];
-        item.style.backgroundImage = `url('${myWork[i].simg}')`;
+        background.style.backgroundImage = `url('${myWork[i].simg}')`;
         // $('.item-demo')[i].attr("href", myWork[i].url)
     }
     const item = $('.work__gallery__item');
+    console.log(item);
+    item.attr( "id", function( arr ) {
+        return arr;
+      })
     // item.each((i) => {
     //     item[i].data('item', i)
     //     item.click((e) => {
@@ -88,6 +94,6 @@ export function workInit() {
     item.click((e) => {
         e.preventDefault();
         showProject();
-        console.log($(this));
+        editProjectPage(e.currentTarget.id);
     });
 }
